@@ -5,7 +5,7 @@ USER root
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get install -y wget vim openjdk-9-jre firefox git && \
+    apt-get install -y wget vim openjdk-9-jre firefox git libpulse-dev && \
     apt-get clean && apt-get purge && apt-get autoremove && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /android-studio && \
