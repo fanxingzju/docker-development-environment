@@ -13,7 +13,7 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 ## 初始化
 
-进入容器后，请先执行，打开Android Studio，并[安装Flutter和Dart插件]。
+进入容器后，请先运行Android Studio，并[安装Flutter和Dart插件](https://flutterchina.club/get-started/editor/#androidsstudio)。
 
 第一次运行Android Studio时，软件需要联网，自动下载额外的依赖。
 
