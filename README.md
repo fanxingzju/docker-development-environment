@@ -23,7 +23,18 @@ docker build --network host \
 
 参考[容器化开发环境](https://github.com/fanxingzju/docker_development_images/blob/master/docs/容器化开发环境.md)
 
-注意配置x11-server及设置DISPLAY环境变量
+注意配置x11-server及设置DISPLAY环境变量 
+
+使用容器化开发环境，建议在任何情况下，启动容器时，均加入以下启动参数 
+
+```bash
+# 直接使用主机的网络，方便容器访问外网
+--net=host 
+# 获取更高的权限
+--privileged
+# 容器和主机时间一致
+-v /etc/localtime:/etc/localtime:ro
+``` 
 
 ## 进入容器
 
